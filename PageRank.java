@@ -175,8 +175,8 @@ public class PageRank {
 		conf.setInputFormat(TextInputFormat.class);
 		conf.setOutputFormat(SequenceFileOutputFormat.class);
 
-		FileInputFormat.setInputPaths(conf, new Path("input"));
-		FileOutputFormat.setOutputPath(conf, new Path("output0"));
+		FileInputFormat.setInputPaths(conf, new Path("/home/o/workspace/CS5300PROJECT2BLOCKED/input"));
+		FileOutputFormat.setOutputPath(conf, new Path("/home/o/workspace/CS5300PROJECT2BLOCKED/output0"));
 		//FileInputFormat.setInputPaths(conf, new Path("s3n://ot55-cs5300-project2blocked/input"));
 		//FileOutputFormat.setOutputPath(conf, new Path("s3n://ot55-cs5300-project2blocked/output0"));
 
@@ -197,8 +197,8 @@ public class PageRank {
 			conf.setInputFormat(SequenceFileInputFormat.class);
 			conf.setOutputFormat(SequenceFileOutputFormat.class);
 
-			FileInputFormat.setInputPaths(conf, new Path("output"+String.valueOf(i)));
-			FileOutputFormat.setOutputPath(conf, new Path("output"+String.valueOf(i+1)));
+			FileInputFormat.setInputPaths(conf, new Path("/home/o/workspace/CS5300PROJECT2BLOCKED/output"+String.valueOf(i)));
+			FileOutputFormat.setOutputPath(conf, new Path("/home/o/workspace/CS5300PROJECT2BLOCKED/output"+String.valueOf(i+1)));
 			//FileInputFormat.setInputPaths(conf, new Path("s3n://ot55-cs5300-project2blocked/output"+String.valueOf(i)));
 			//FileOutputFormat.setOutputPath(conf, new Path("s3n://ot55-cs5300-project2blocked/output"+String.valueOf(i+1)));
 			
